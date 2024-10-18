@@ -1,5 +1,3 @@
-import { unstable_noStore } from "next/cache";
-
 type Props = {
   params: {
     id: string;
@@ -7,6 +5,5 @@ type Props = {
 };
 
 export default async function IDPage({ params }: Props) {
-  unstable_noStore();
   return <div>{params.id}</div>;
 }
